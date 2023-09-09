@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Daily</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <section>
+<nav>
+    <div class="container">
+        <h2 class="logo">News Daily</h2>
+        <div class="search-bar">
+            <i class="uil uil-search"></i>
+            <input id="search-text" type="search" placeholder="Search for News">
+        </div>
+        <div class="create">
+            <label class="btn">EN</label>
+        </div>
+    
+    </div>
+</nav>
+    </section>
+
+<div class="prefrences flex">
+        
+    <label class="btn" id="world" onclick="onNavItemClick('world')">World</label>
+    <label class="btn" id="india" onclick="onNavItemClick('india')">India</label>
+    <label class="btn" id="politics" onclick="onNavItemClick('politics')">Politics</label>
+    <label class="btn" id="business" onclick="onNavItemClick('business')">Business</label>
+    <label class="btn" id="technology" onclick="onNavItemClick('technology')">Technology</label>
+    <label class="btn" id="science" onclick="onNavItemClick('science')">Science</label>
+    <label class="btn" id="sports" onclick="onNavItemClick('sports')">Sports</label>
+    <label class="btn" id="health" onclick="onNavItemClick('health')">Health</label>
+    <label class="btn" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</label>
+    <label class="btn" id="lifestyle" onclick="onNavItemClick('lifestyle')">Lifestyle</label>
+    <label class="btn" id="delhi" onclick="onNavItemClick('delhi')">Delhi</label>
+    <label class="btn" id="local" onclick="onNavItemClick('local')">Local</label>
+    <label class="btn" id="music" onclick="onNavItemClick('music')">Music</label>
+    <!-- <label class="btn" id="politics" onclick="onNavItemClick('politics')">Politics</label> -->
+    <!-- <label class="btn">Politics</label>  -->
+    <!-- <label class="btn">Politics</label> -->
+
+</div>
+<main>
+   
+    
+
+    <div class="cards-container container flex" id="cards-container">
+       
+    </div>
+</main>
+
+<template id="template-news-card">
+
+    <!-- <ul class="cards container"> -->
+        <!-- <li class="cards_item">  -->
+        <div class="card">
+            <div class="card_image">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card_content">
+                <h3 id="news-title" class="card_title">Title</h3>
+                <h6 class="news-source" id="news-source">
+                    End gadget 26/08/2023
+                </h6>
+                
+                <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias minima voluptates illo repudiandae? Aperiam quam impedit dolore optio inventore est nesciunt, corrupti quae temporibus, sunt voluptate! Eos nihil praesentium reiciendis!</p>
+                
+            </div>
+        </div>
+        <!-- </li> -->
+    <!-- </ul> -->
+</template>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

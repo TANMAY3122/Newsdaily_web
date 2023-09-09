@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    outline:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+    overflow-x:hidden ;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.btn {
+    display: inline-box;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 1rem;
+    /* width: 100px; */
+    background : white;
+    /* margin-top:10px ; */
+ color: black;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: rgb(253, 1, 1);
+}
+
+.btn.active {
+    background-color: rgb(253, 1, 1);
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .search-bar{
+    background: hsl(252,30%,95%);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+nav .search-bar input[type="search"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: hsl(252,30%,17%);
+}
+
+nav .search-bar input[type="search"]{
+    color: hsl(252,15%,65%);
+    }
+
+nav .create {
+        display: flex;
+        align-items: center;
+        gap: 2rem; 
+    }
+
+    i {
+        color: black;
+    }
+
+.prefrences {
+    
+position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    /* margin: 0 auto; */
+    margin-left: 95px;
+    
+    background-color: black;
+    height: 8%;
+    display: block;
+    /* overflow: hidden; */
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 60px;
+}
+
+.cards-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  align-items: start;
+  margin-top: 90px;
+  
+}
+
+.card {
+  width: 360px;
+  min-height: 400px;
+  /* height: 50%; */
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card_image{
+    overflow: hidden;
+    height: 200px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.card_content {
+  color: black;
+  padding: 12px;
+  height: 20px;
+  /* overflow: auto; */
+  /* min-height: 18px; */
+}
+
+.card_content p,h6{
+    font-size: 12px;
+}
+
+.card_content h3{
+    font-size: 15px;
+}
+
+.news-source {
+  margin-block: 12px;
+}
+
+.flex{
+  display: flex;
+  align-items: center; 
+}
